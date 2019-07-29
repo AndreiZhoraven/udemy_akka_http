@@ -172,7 +172,7 @@ object DirectivesBreakdown extends App {
       }
       post {
         complete(StatusCodes.Forbidden)
-      } 
+      }
     }
 
   Http().bindAndHandle(getOrPutPath, "localhost", 8081)

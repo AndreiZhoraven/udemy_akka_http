@@ -100,7 +100,7 @@ object LowLevelRest extends App with GuitarStoreJSONProtocol {
   println(simpleGuitarJsonString.parseJson.convertTo[Guitar])
 
   /*
-    set-up
+    setup
    */
   val guitarDB = system.actorOf(Props[GuitarDB], "LowLevelGuitarDB")
   val guitarList = List(
