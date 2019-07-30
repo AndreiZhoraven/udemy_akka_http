@@ -73,6 +73,7 @@ object HighLevelExercise extends App with CitizenRegistrationJSONProtocol {
           case Success(person) =>
             log.info(s"New Person ${person}")
             people = people :+ person
+            complete(StatusCodes.OK)
           case Failure(ex) =>
             failWith(ex)
         }
