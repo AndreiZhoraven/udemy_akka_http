@@ -4,7 +4,7 @@
 		module="udemy-akka-http_2.13"
 		revision="0.1"
 		status="integration"
-		publication="20190726204325"
+		publication="20190731005015"
 	>
 		<description>
 		udemy-akka-http
@@ -38,5 +38,6 @@
 		<dependency org="com.typesafe.akka" name="akka-http-testkit_2.13" rev="10.1.9" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-testkit_2.13" rev="2.5.23" conf="compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.13" rev="3.0.8" conf="compile->default(compile)"/>
+		<dependency org="com.pauldijou" name="jwt-spray-json_2.13" rev="3.0.1" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

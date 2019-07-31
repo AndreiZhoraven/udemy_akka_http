@@ -7,15 +7,51 @@
 		revision="0.1"
 		conf="compile-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
-		date="20190726204325"/>
+		date="20190731005015"/>
 	<dependencies>
+		<module organisation="com.pauldijou" name="jwt-spray-json_2.13">
+			<revision name="3.0.1" status="release" pubdate="20190616131545" resolver="public" artresolver="public" homepage="http://pauldijou.fr/jwt-scala/" extra-info.apiURL="http://pauldijou.fr/jwt-scala/api/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2170" time="244" location="/Users/Tomohiro/.ivy2/cache/com.pauldijou/jwt-spray-json_2.13/ivy-3.0.1.xml" searched="true" original-local-location="/Users/Tomohiro/.ivy2/cache/com.pauldijou/jwt-spray-json_2.13/ivy-3.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/pauldijou/jwt-spray-json_2.13/3.0.1/jwt-spray-json_2.13-3.0.1.pom"/>
+				<caller organisation="default" name="udemy-akka-http_2.13" conf="compile-internal, compile, provided, optional" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jwt-spray-json_2.13" type="jar" ext="jar" status="successful" details="" size="19798" time="304" location="/Users/Tomohiro/.ivy2/cache/com.pauldijou/jwt-spray-json_2.13/jars/jwt-spray-json_2.13-3.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/pauldijou/jwt-spray-json_2.13/3.0.1/jwt-spray-json_2.13-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.pauldijou" name="jwt-json-common_2.13">
+			<revision name="3.0.1" status="release" pubdate="20190616132113" resolver="public" artresolver="public" homepage="http://pauldijou.fr/jwt-scala/" extra-info.apiURL="http://pauldijou.fr/jwt-scala/api/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1993" time="200" location="/Users/Tomohiro/.ivy2/cache/com.pauldijou/jwt-json-common_2.13/ivy-3.0.1.xml" searched="true" original-local-location="/Users/Tomohiro/.ivy2/cache/com.pauldijou/jwt-json-common_2.13/ivy-3.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/pauldijou/jwt-json-common_2.13/3.0.1/jwt-json-common_2.13-3.0.1.pom"/>
+				<caller organisation="com.pauldijou" name="jwt-spray-json_2.13" conf="default, compile, runtime, master" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="3.0.1"/>
+				<artifacts>
+					<artifact name="jwt-json-common_2.13" type="jar" ext="jar" status="successful" details="" size="8362" time="374" location="/Users/Tomohiro/.ivy2/cache/com.pauldijou/jwt-json-common_2.13/jars/jwt-json-common_2.13-3.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/pauldijou/jwt-json-common_2.13/3.0.1/jwt-json-common_2.13-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.pauldijou" name="jwt-core_2.13">
+			<revision name="3.0.1" status="release" pubdate="20190616132141" resolver="public" artresolver="public" homepage="http://pauldijou.fr/jwt-scala/" extra-info.apiURL="http://pauldijou.fr/jwt-scala/api/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="22">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2007" time="194" location="/Users/Tomohiro/.ivy2/cache/com.pauldijou/jwt-core_2.13/ivy-3.0.1.xml" searched="true" original-local-location="/Users/Tomohiro/.ivy2/cache/com.pauldijou/jwt-core_2.13/ivy-3.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/pauldijou/jwt-core_2.13/3.0.1/jwt-core_2.13-3.0.1.pom"/>
+				<caller organisation="com.pauldijou" name="jwt-json-common_2.13" conf="compile, runtime" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="3.0.1"/>
+				<artifacts>
+					<artifact name="jwt-core_2.13" type="jar" ext="jar" status="successful" details="" size="109301" time="413" location="/Users/Tomohiro/.ivy2/cache/com.pauldijou/jwt-core_2.13/jars/jwt-core_2.13-3.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/pauldijou/jwt-core_2.13/3.0.1/jwt-core_2.13-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="com.typesafe.akka" name="akka-http-testkit_2.13">
-			<revision name="10.1.9" status="release" pubdate="20190717090539" resolver="public" artresolver="public" homepage="https://akka.io" extra-info.apiURL="https://doc.akka.io/api/akka-http/10.1.9/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="14">
+			<revision name="10.1.9" status="release" pubdate="20190717090539" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io" extra-info.apiURL="https://doc.akka.io/api/akka-http/10.1.9/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
 				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
-				<metadata-artifact status="successful" details="" size="3449" time="60" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-testkit_2.13/ivy-10.1.9.xml" searched="true" original-local-location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-testkit_2.13/ivy-10.1.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-testkit_2.13/10.1.9/akka-http-testkit_2.13-10.1.9.pom"/>
+				<metadata-artifact status="no" details="" size="3826" time="0" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-testkit_2.13/ivy-10.1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-testkit_2.13/10.1.9/akka-http-testkit_2.13-10.1.9.pom"/>
 				<caller organisation="default" name="udemy-akka-http_2.13" conf="compile-internal, compile, provided, optional" rev="10.1.9" rev-constraint-default="10.1.9" rev-constraint-dynamic="10.1.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="akka-http-testkit_2.13" type="jar" ext="jar" status="successful" details="" size="103166" time="671" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-testkit_2.13/jars/akka-http-testkit_2.13-10.1.9.jar">
+					<artifact name="akka-http-testkit_2.13" type="jar" ext="jar" status="no" details="" size="103166" time="0" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-testkit_2.13/jars/akka-http-testkit_2.13-10.1.9.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-testkit_2.13/10.1.9/akka-http-testkit_2.13-10.1.9.jar"/>
 					</artifact>
 				</artifacts>
@@ -34,62 +70,63 @@
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-http-spray-json_2.13">
-			<revision name="10.1.9" status="release" pubdate="20190717090534" resolver="public" artresolver="public" homepage="https://akka.io" extra-info.apiURL="https://doc.akka.io/api/akka-http/10.1.9/" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="12">
+			<revision name="10.1.9" status="release" pubdate="20190717090534" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io" extra-info.apiURL="https://doc.akka.io/api/akka-http/10.1.9/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
 				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
-				<metadata-artifact status="successful" details="" size="2792" time="65" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.13/ivy-10.1.9.xml" searched="true" original-local-location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.13/ivy-10.1.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.13/10.1.9/akka-http-spray-json_2.13-10.1.9.pom"/>
+				<metadata-artifact status="no" details="" size="3459" time="0" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.13/ivy-10.1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.13/10.1.9/akka-http-spray-json_2.13-10.1.9.pom"/>
 				<caller organisation="default" name="udemy-akka-http_2.13" conf="compile-internal, compile, provided, optional" rev="10.1.9" rev-constraint-default="10.1.9" rev-constraint-dynamic="10.1.9" callerrev="0.1"/>
 				<artifacts>
-					<artifact name="akka-http-spray-json_2.13" type="jar" ext="jar" status="successful" details="" size="16094" time="184" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.13/jars/akka-http-spray-json_2.13-10.1.9.jar">
+					<artifact name="akka-http-spray-json_2.13" type="jar" ext="jar" status="no" details="" size="16094" time="0" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-spray-json_2.13/jars/akka-http-spray-json_2.13-10.1.9.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-spray-json_2.13/10.1.9/akka-http-spray-json_2.13-10.1.9.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-http_2.13">
-			<revision name="10.1.9" status="release" pubdate="20190717090547" resolver="public" artresolver="public" homepage="https://akka.io" extra-info.apiURL="https://doc.akka.io/api/akka-http/10.1.9/" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="9">
+			<revision name="10.1.9" status="release" pubdate="20190717090547" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io" extra-info.apiURL="https://doc.akka.io/api/akka-http/10.1.9/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="9">
 				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
-				<metadata-artifact status="successful" details="" size="2393" time="82" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http_2.13/ivy-10.1.9.xml" searched="true" original-local-location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http_2.13/ivy-10.1.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.13/10.1.9/akka-http_2.13-10.1.9.pom"/>
+				<metadata-artifact status="no" details="" size="3177" time="0" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http_2.13/ivy-10.1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.13/10.1.9/akka-http_2.13-10.1.9.pom"/>
 				<caller organisation="default" name="udemy-akka-http_2.13" conf="compile-internal, compile, provided, optional" rev="10.1.9" rev-constraint-default="10.1.9" rev-constraint-dynamic="10.1.9" callerrev="0.1"/>
 				<caller organisation="com.typesafe.akka" name="akka-http-testkit_2.13" conf="default, compile, runtime, master" rev="10.1.9" rev-constraint-default="10.1.9" rev-constraint-dynamic="10.1.9" callerrev="10.1.9"/>
 				<caller organisation="com.typesafe.akka" name="akka-http-spray-json_2.13" conf="default, compile, runtime, master" rev="10.1.9" rev-constraint-default="10.1.9" rev-constraint-dynamic="10.1.9" callerrev="10.1.9"/>
 				<artifacts>
-					<artifact name="akka-http_2.13" type="jar" ext="jar" status="successful" details="" size="1763098" time="1688" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http_2.13/jars/akka-http_2.13-10.1.9.jar">
+					<artifact name="akka-http_2.13" type="jar" ext="jar" status="no" details="" size="1763098" time="0" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http_2.13/jars/akka-http_2.13-10.1.9.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http_2.13/10.1.9/akka-http_2.13-10.1.9.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-http-core_2.13">
-			<revision name="10.1.9" status="release" pubdate="20190717090526" resolver="public" artresolver="public" homepage="https://akka.io" extra-info.apiURL="https://doc.akka.io/api/akka-http/10.1.9/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+			<revision name="10.1.9" status="release" pubdate="20190717090526" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io" extra-info.apiURL="https://doc.akka.io/api/akka-http/10.1.9/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
 				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
-				<metadata-artifact status="successful" details="" size="3442" time="74" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-core_2.13/ivy-10.1.9.xml" searched="true" original-local-location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-core_2.13/ivy-10.1.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.13/10.1.9/akka-http-core_2.13-10.1.9.pom"/>
+				<metadata-artifact status="no" details="" size="3796" time="0" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-core_2.13/ivy-10.1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.13/10.1.9/akka-http-core_2.13-10.1.9.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-http_2.13" conf="default, compile, runtime, master" rev="10.1.9" rev-constraint-default="10.1.9" rev-constraint-dynamic="10.1.9" callerrev="10.1.9"/>
 				<artifacts>
-					<artifact name="akka-http-core_2.13" type="jar" ext="jar" status="successful" details="" size="3594790" time="2254" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-core_2.13/jars/akka-http-core_2.13-10.1.9.jar">
+					<artifact name="akka-http-core_2.13" type="jar" ext="jar" status="no" details="" size="3594790" time="0" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-http-core_2.13/jars/akka-http-core_2.13-10.1.9.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-http-core_2.13/10.1.9/akka-http-core_2.13-10.1.9.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="io.spray" name="spray-json_2.13">
-			<revision name="1.3.5" status="release" pubdate="20190610234534" resolver="public" artresolver="public" homepage="https://github.com/spray/spray-json" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+			<revision name="1.3.5" status="release" pubdate="20190610234534" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="2220" time="60" location="/Users/Tomohiro/.ivy2/cache/io.spray/spray-json_2.13/ivy-1.3.5.xml" searched="true" original-local-location="/Users/Tomohiro/.ivy2/cache/io.spray/spray-json_2.13/ivy-1.3.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-json_2.13/1.3.5/spray-json_2.13-1.3.5.pom"/>
+				<metadata-artifact status="no" details="" size="3078" time="0" location="/Users/Tomohiro/.ivy2/cache/io.spray/spray-json_2.13/ivy-1.3.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-json_2.13/1.3.5/spray-json_2.13-1.3.5.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-http-spray-json_2.13" conf="default, compile, runtime, master" rev="1.3.5" rev-constraint-default="1.3.5" rev-constraint-dynamic="1.3.5" callerrev="10.1.9"/>
+				<caller organisation="com.pauldijou" name="jwt-spray-json_2.13" conf="default, compile, runtime, master" rev="1.3.5" rev-constraint-default="1.3.5" rev-constraint-dynamic="1.3.5" callerrev="3.0.1"/>
 				<artifacts>
-					<artifact name="spray-json_2.13" type="jar" ext="jar" status="successful" details="" size="296795" time="478" location="/Users/Tomohiro/.ivy2/cache/io.spray/spray-json_2.13/jars/spray-json_2.13-1.3.5.jar">
+					<artifact name="spray-json_2.13" type="jar" ext="jar" status="no" details="" size="296795" time="0" location="/Users/Tomohiro/.ivy2/cache/io.spray/spray-json_2.13/jars/spray-json_2.13-1.3.5.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-json_2.13/1.3.5/spray-json_2.13-1.3.5.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.typesafe.akka" name="akka-parsing_2.13">
-			<revision name="10.1.9" status="release" pubdate="20190717090458" resolver="public" artresolver="public" homepage="https://akka.io" extra-info.apiURL="https://doc.akka.io/api/akka-http/10.1.9/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+			<revision name="10.1.9" status="release" pubdate="20190717090458" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://akka.io" extra-info.apiURL="https://doc.akka.io/api/akka-http/10.1.9/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
 				<license name="Apache-2.0" url="https://opensource.org/licenses/Apache-2.0"/>
-				<metadata-artifact status="successful" details="" size="2425" time="66" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-parsing_2.13/ivy-10.1.9.xml" searched="true" original-local-location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-parsing_2.13/ivy-10.1.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.13/10.1.9/akka-parsing_2.13-10.1.9.pom"/>
+				<metadata-artifact status="no" details="" size="3177" time="0" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-parsing_2.13/ivy-10.1.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.13/10.1.9/akka-parsing_2.13-10.1.9.pom"/>
 				<caller organisation="com.typesafe.akka" name="akka-http-core_2.13" conf="compile, runtime" rev="10.1.9" rev-constraint-default="10.1.9" rev-constraint-dynamic="10.1.9" callerrev="10.1.9"/>
 				<artifacts>
-					<artifact name="akka-parsing_2.13" type="jar" ext="jar" status="successful" details="" size="984640" time="1201" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-parsing_2.13/jars/akka-parsing_2.13-10.1.9.jar">
+					<artifact name="akka-parsing_2.13" type="jar" ext="jar" status="no" details="" size="984640" time="0" location="/Users/Tomohiro/.ivy2/cache/com.typesafe.akka/akka-parsing_2.13/jars/akka-parsing_2.13-10.1.9.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-parsing_2.13/10.1.9/akka-parsing_2.13-10.1.9.jar"/>
 					</artifact>
 				</artifacts>
@@ -254,9 +291,12 @@
 				<caller organisation="com.typesafe.akka" name="akka-actor_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="2.5.23"/>
 				<caller organisation="com.typesafe.akka" name="akka-stream_2.13" conf="default, compile, runtime, master" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="2.5.23"/>
 				<caller organisation="com.typesafe.akka" name="akka-protobuf_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="2.5.23"/>
+				<caller organisation="com.pauldijou" name="jwt-spray-json_2.13" conf="default, compile, runtime, master" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="3.0.1"/>
+				<caller organisation="com.pauldijou" name="jwt-core_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="3.0.1"/>
 				<caller organisation="org.scala-lang.modules" name="scala-parser-combinators_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="1.1.2"/>
 				<caller organisation="com.typesafe.akka" name="akka-http-core_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="10.1.9"/>
 				<caller organisation="default" name="udemy-akka-http_2.13" conf="compile-internal, compile, provided, optional" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="0.1"/>
+				<caller organisation="com.pauldijou" name="jwt-json-common_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="3.0.1"/>
 				<caller organisation="com.typesafe" name="ssl-config-core_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="0.4.0"/>
 				<caller organisation="org.scalactic" name="scalactic_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="3.0.8"/>
 				<caller organisation="com.typesafe.akka" name="akka-parsing_2.13" conf="compile, runtime" rev="2.13.0" rev-constraint-default="2.13.0" rev-constraint-dynamic="2.13.0" callerrev="10.1.9"/>
